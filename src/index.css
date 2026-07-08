@@ -13,3 +13,42 @@
     background-color: #d3fd50;
     color:black;
 }
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.moveLeft{
+    animation-name: moveLeft;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes moveLeft {
+    
+    from{
+        transform: translateX(-50%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.moveRight{
+    animation-name: moveRight;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveRight {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(150%);
+    }
+    
+}
