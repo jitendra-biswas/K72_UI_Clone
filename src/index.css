@@ -77,3 +77,21 @@ body{
     height: 100%;
 }
 
+
+
+/*Animation for Navbar*/
+.moveX{
+    animation-name: moveX;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveX {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

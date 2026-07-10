@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import FullScreenNav from "./FullScreenNav";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const animationRef = useRef();
   const [LineColor, setLineColor] = useState(300);
   const location = useLocation();
@@ -18,9 +19,9 @@ const Navbar = () => {
     setLineColor(300);
   };
   return (
-    <nav className="fixed w-full left-0 top-0 z-10 flex items-center justify-between">
-      <div onClick={()=>navigate('/')} className="logo pl-2.5 pt-1.5 w-[8vw] cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 44">
+    <nav className="fixed w-full left-0 top-0 z-50 flex items-center justify-end">
+      <div onClick={()=>navigate('/')} className="logo fixed z-50 top-3 left-3 pl-2.5 pt-1.5 w-[8vw] cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 44" className="stroke-1 stroke-zinc-300 drop-shadow-xs drop-shadow-zinc-100">
           <path
             fill={location.pathname=="/" ? "white": "black"}
             fillRule="evenodd"
@@ -32,7 +33,7 @@ const Navbar = () => {
       <div
         onMouseEnter={showAnimation}
         onMouseLeave={endAnimation}
-        className="button bg-black h-[3.2vw] w-[14vw] mb-2 flex items-center justify-end pr-7 cursor-pointer relative"
+        className="button bg-black h-[3.2vw] w-[14vw] mb-2 flex items-center justify-end pr-7 cursor-pointer relative z-30"
       >
         <div
           ref={animationRef}
@@ -52,6 +53,11 @@ const Navbar = () => {
           ></div>
         </div>
       </div>
+      
+     
+     {/*Fullnav */}
+     <FullScreenNav />
+
     </nav>
   );
 };
