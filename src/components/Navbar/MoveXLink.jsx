@@ -17,7 +17,7 @@ const MoveXLink = (props) => {
   const hidden = ()=>{
     gsap.to(moveXRef.current,{
       opacity:0,
-      duration:0.2
+      duration:0.15,
     })
   }
  
@@ -25,7 +25,7 @@ const MoveXLink = (props) => {
      <div
       onMouseEnter={visible}
       onMouseLeave={hidden}
-     className="link w-full h-32  border-t border-t-zinc-300 relative cursor-pointer overflow-hidden">
+     className="link w-full h-32  border-t border-t-zinc-300 relative cursor-pointer overflow-hidden origin-top">
             <div className="uppercase w-full h-full text-[7vw] flex items-center justify-center ">
               {props.name}
             </div>

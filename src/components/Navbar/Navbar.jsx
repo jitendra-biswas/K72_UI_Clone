@@ -3,10 +3,12 @@ import { useLocation, useNavigate } from "react-router-dom";
 import FullScreenNav from "./FullScreenNav";
 
 const Navbar = (props) => {
+  const [HambargarClicked, setHambargarClicked] = useState(false)
   const animationRef = useRef();
   const [LineColor, setLineColor] = useState(300);
   const location = useLocation();
   const navigate = useNavigate();
+
 
   const showAnimation = () => {
     animationRef.current.style.height = "100%";
@@ -18,10 +20,15 @@ const Navbar = (props) => {
     animationRef.current.style.transition = "all ease-in 0.1s";
     setLineColor(300);
   };
+
+   const HambargarClickHandler = ()=>{
+    setHambargarClicked(true);
+   }
+
   return (
     <nav className="fixed w-full left-0 top-0 z-50 flex items-center justify-end">
       <div onClick={()=>navigate('/')} className="logo fixed z-50 top-3 left-3 pl-2.5 pt-1.5 w-[8vw] cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 44" className="stroke-1 stroke-zinc-300 drop-shadow-xs drop-shadow-zinc-100">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 44" className="stroke-1 stroke-zinc-300 ">
           <path
             fill={location.pathname=="/" ? "white": "black"}
             fillRule="evenodd"
@@ -31,6 +38,7 @@ const Navbar = (props) => {
       </div>
 
       <div
+       onClick={HambargarClickHandler}
         onMouseEnter={showAnimation}
         onMouseLeave={endAnimation}
         className="button bg-black h-[3.2vw] w-[14vw] mb-2 flex items-center justify-end pr-7 cursor-pointer relative z-30"
@@ -56,7 +64,7 @@ const Navbar = (props) => {
       
      
      {/*Fullnav */}
-     <FullScreenNav />
+     <FullScreenNav hambargarStatus={HambargarClicked} setHambargarStatus={setHambargarClicked} />
 
     </nav>
   );

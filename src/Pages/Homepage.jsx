@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
-      <div className="background-video w-full h-screen overflow-hidden relative">
-        <video src="./background.mp4" autoPlay muted loop></video>
+      <div className="background-video w-full min-h-screen overflow-hidden relative">
+       <div className="w-full h-screen">
+         <video src="./background.mp4" autoPlay muted loop className="w-full h-full object-center object-cover"></video>
+       </div>
         <div className="homepage-container w-full h-full absolute left-0 top-0">
           <div className="top flex flex-col items-center text-zinc-200">
             <h1 className="font-[font1] uppercase text-[9vw] leading-[9vw] mt-2">
