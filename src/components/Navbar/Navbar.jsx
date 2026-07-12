@@ -9,6 +9,11 @@ const Navbar = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
 
+ const  IconClickHandler = ()=>{
+    navigate('/')
+    window.location.reload();
+ }
+
 
   const showAnimation = () => {
     animationRef.current.style.height = "100%";
@@ -27,7 +32,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="fixed w-full left-0 top-0 z-50 flex items-center justify-end">
-      <div onClick={()=>navigate('/')} className="logo fixed z-50 top-3 left-3 pl-2.5 pt-1.5 w-[8vw] cursor-pointer">
+      <div onClick={IconClickHandler} className="logo fixed z-50 top-3 left-3 pl-2.5 pt-1.5 w-[8vw] cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 44" className="stroke-1 stroke-zinc-300 ">
           <path
             fill={location.pathname=="/" ? "white": "black"}

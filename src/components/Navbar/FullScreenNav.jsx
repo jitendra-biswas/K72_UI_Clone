@@ -42,6 +42,8 @@ const FullScreenNav = (props) => {
      props.setHambargarStatus(false)
   };
 
+  
+
 
   const MoveLinkList = [
     {
@@ -70,17 +72,6 @@ const FullScreenNav = (props) => {
     },
   ];
 
-
-
-  // useGSAP(() => {
-  //   gsap.from(linkContainer.current.children, {
-  //     opacity: 0,
-  //     rotateX: 90,
-  //     duration: 0.6,
-  //     stagger: 0.2,
-     
-  //   });
-  // });
 
 
 
@@ -123,17 +114,17 @@ const FullScreenNav = (props) => {
 
         <div className="footer h-16 flex items-center justify-between px-20">
           <ul className="uppercase flex items-center gap-3 text-xs">
-            <li>Politique de confidentialité</li>
-            <li>Avis de confidentialité</li>
-            <li>Rapport éthique</li>
-            <li>Options de consentement</li>
+            <li className="hover:text-[#D3FD50] cursor-pointer">Politique de confidentialité</li>
+            <li className="hover:text-[#D3FD50] cursor-pointer">Avis de confidentialité</li>
+            <li className="hover:text-[#D3FD50] cursor-pointer">Rapport éthique</li>
+            <li className="hover:text-[#D3FD50] cursor-pointer">Options de consentement</li>
           </ul>
 
           <ul className="text-5xl uppercase flex items-center gap-2">
-            <li className="border-2 rounded-full px-2">fg</li>
-            <li className="border-2 rounded-full px-2">ig</li>
-            <li className="border-2 rounded-full px-2">in</li>
-            <li className="border-2 rounded-full px-2">be</li>
+            <li className="border-2 rounded-full px-2 hover:text-[#D3FD50] cursor-pointer">fg</li>
+            <li className="border-2 rounded-full px-2 hover:text-[#D3FD50] cursor-pointer">ig</li>
+            <li className="border-2 rounded-full px-2 hover:text-[#D3FD50] cursor-pointer">in</li>
+            <li className="border-2 rounded-full px-2 hover:text-[#D3FD50] cursor-pointer">be</li>
           </ul>
         </div>
       </div>
