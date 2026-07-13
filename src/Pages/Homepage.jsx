@@ -6,7 +6,7 @@ const Homepage = () => {
     <>
       <div className="background-video w-full min-h-screen overflow-hidden relative">
        <div className="w-full h-screen">
-         <video src="./background.mp4" autoPlay muted loop className="w-full h-full object-center object-cover"></video>
+         <video src="/background.mp4" autoPlay muted loop className="w-full h-full object-center object-cover"></video>
        </div>
         <div className="homepage-container w-full h-full absolute left-0 top-0 max-md:flex max-md:flex-col max-md:gap-6">
           <div className="top flex flex-col items-center text-zinc-200 max-md:pt-[50vh]">
@@ -17,7 +17,7 @@ const Homepage = () => {
               qui{" "}
               <div className="w-[15vw] h-[7vw] overflow-hidden rounded-full ">
                 <video
-                  src="./background.mp4"
+                  src="/background.mp4"
                   autoPlay
                   muted
                   loop
