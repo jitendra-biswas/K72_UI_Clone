@@ -73,10 +73,10 @@ const Agence = (props) => {
 
   return (
     <>
-      <div ref={mainPageRef} className="w-full min-h-screen bg-white">
+      <div ref={mainPageRef} className="w-full bg-white ">
         <div
           ref={imgBoxRef}
-          className="image w-[14vw] h-72 absolute top-32 left-[30vw] rounded-xl overflow-hidden"
+          className="image w-[14vw] max-md:w-[20vw]  h-72 max-md:h-26 absolute top-32 left-[30vw] max-md:left-[20vw] rounded-xl overflow-hidden"
         >
           <img
             ref={imgRef}
@@ -85,17 +85,17 @@ const Agence = (props) => {
             className="w-full h-full object-cover object-center"
           />
         </div>
-        <div className="flex flex-col items-center leading-65 pt-[50vh] relative">
-          <div  className="h-[17vw] overflow-hidden">
+        <div className="flex flex-col items-center leading-65 max-md:leading-32 pt-[50vh] max-md:pt-[25vh] relative">
+          <div  className="h-[17vw] max-md:h-[20vw] max-md:flex max-md:items-center overflow-hidden">
             <h1 ref={text1Ref} className="font-[font2] text-[19vw] uppercase">Soixan7e</h1>
           </div>
-          <div  className="h-[17vw] overflow-hidden">
+          <div  className="h-[17vw] max-md:h-[20vw] max-md:flex max-md:items-center overflow-hidden">
             <h1 ref={text2Ref} className="font-[font2] text-[19vw] uppercase">Douze</h1>
           </div>
         </div>
 
-        <div className="w-full flex justify-end pr-10">
-          <p className="paragraph font-[font2] w-[50vw] text-[3vw] leading-12">
+        <div className="w-full flex justify-end pr-10 max-md:pt-22 max-md:pb-15 max-md:pr-0 max-md:px-3">
+          <p className="paragraph font-[font2] w-[50vw] max-md:w-full text-[3vw] max-md:text-xl leading-12 max-md:leading-6">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notre
             curiosité nourrit notre créativité. On reste humbles et on dit non
             aux gros egos, même le vôtre. Une marque est vivante. Elle a des

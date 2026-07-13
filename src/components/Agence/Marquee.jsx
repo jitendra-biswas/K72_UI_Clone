@@ -52,9 +52,9 @@ const Marquee = (props) => {
    })
   return (
     <>
-    <div ref={marqueImageRef} className="marqueImage min-h-[200vh]">
-          <div className="flex justify-center items-start  sticky top-0">
-            <div className="image-container w-[30vw] h-screen rounded-xl  overflow-hidden relative">
+    <div ref={marqueImageRef} className="marqueImage min-h-screen max-md:h-screen max-md:overflow-hidden max-md:flex max-md:flex-col max-md:gap-10">
+          <div className="sticky top-0 h-screen flex justify-center items-start">
+            <div className="image-container w-[30vw] max-md:w-[50vw] h-screen max-md:h-[35vh] rounded-xl  overflow-hidden relative">
               <img
                 src="/img5.png"
                 alt=""
@@ -76,16 +76,16 @@ const Marquee = (props) => {
               </div>
             </div>
             
-            <div className="marquee1 w-full font-[font2] absolute bottom-20 flex gap-[50vw]">
-                <div className="moveRight  flex items-center gap-10">
+            <div className="marquee1 w-full font-[font2] absolute bottom-20 flex ">
+                <div className="moveRight  flex items-center gap-10 max-md:-mt-62">
                     <h1 className=" text-[8vw]">LAVIOLETTE</h1>
-              <p className="text-3xl mt-10 whitespace-nowrap">Directrice artistique</p>
+              <p className="text-3xl mt-10 max-md:mt-0 whitespace-nowrap">Directrice artistique</p>
                 </div>
             </div>
            
           </div>
           <div className="flex justify-center items-start  sticky top-0 bg-black">
-            <div className="image-container w-[30vw] h-screen rounded-xl relative">
+            <div className="image-container w-[30vw] max-md:w-[50vw] h-screen max-md:h-[40vh] rounded-xl relative overflow-hidden">
               <img
                 src="/img2.png"
                 alt=""
@@ -111,7 +111,7 @@ const Marquee = (props) => {
                 <div className="moveRight  flex items-center gap-10">
                     <h1 className=" text-[8vw]">
 GAUCHER</h1>
-              <p className="text-3xl mt-10 whitespace-nowrap">Directrice artistique / Design</p>
+              <p className="text-3xl mt-10 max-md:mt-0 whitespace-nowrap">Directrice artistique / Design</p>
                 </div>
             </div>
            

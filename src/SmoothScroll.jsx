@@ -7,6 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SmoothScroll = () => {
   useEffect(() => {
+    // Don't run Lenis on small screens
+    if (window.innerWidth < 768) return;
+
     const lenis = new Lenis({
       duration: 1.2,
       smoothWheel: true,

@@ -25,8 +25,8 @@ const MoveXLink = (props) => {
      <div
       onMouseEnter={visible}
       onMouseLeave={hidden}
-     className="link w-full h-32  border-t border-t-zinc-300 relative cursor-pointer overflow-hidden origin-top">
-            <div className="uppercase w-full h-full text-[7vw] flex items-center justify-center ">
+     className="link w-full h-32 max-md:h-fit  border-t border-t-zinc-300 relative cursor-pointer overflow-hidden origin-top">
+            <div className="uppercase w-full h-full text-[7vw] max-md:text-[14vw] flex items-center justify-center ">
               {props.name}
             </div>
             <div ref={moveXRef} className={`uppercase w-full h-full text-[7vw]  absolute top-0 left-0 flex whitespace-nowrap opacity-0`}>

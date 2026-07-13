@@ -7,7 +7,7 @@ const Peoples = () => {
   return (
     <div className="w-full h-screen py-20 relative">
 
-      <div className="image w-[23vw] h-[75vh] absolute z-20 top-5 left-[20vw] rounded-xl overflow-hidden">
+      <div className="image w-[23vw] max-md:w-32 h-[75vh] max-md:h-42 absolute z-20 top-5 left-[20vw] rounded-xl overflow-hidden">
         {currentImg && (
           <img
             src={currentImg}

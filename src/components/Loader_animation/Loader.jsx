@@ -28,14 +28,13 @@ function Loader() {
   }, [location]);
 
   return (
-    <div ref={loaderRef} className="loader flex fixed inset-0 z-50">
-      <div className="w-5/6 bg-black h-screen"></div>
-      <div className="w-5/6 bg-black h-screen"></div>
-      <div className="w-5/6 bg-black h-screen"></div>
-      <div className="w-5/6 bg-black h-screen"></div>
-      <div className="w-5/6 bg-black h-screen"></div>
-      <div className="w-5/6 bg-black h-screen"></div>
-    </div>
+   <div ref={loaderRef} className="loader fixed inset-0 z-50 flex">
+  <div className="flex-1 h-screen bg-black"></div>
+  <div className="flex-1 h-screen bg-black"></div>
+  <div className="flex-1 h-screen bg-black"></div>
+  <div className="flex-1 h-screen bg-black"></div>
+  <div className="flex-1 h-screen bg-black"></div>
+</div>
   );
 }
 

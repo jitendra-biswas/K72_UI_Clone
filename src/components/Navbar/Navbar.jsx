@@ -32,7 +32,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="fixed w-full left-0 top-0 z-50 flex items-center justify-end">
-      <div onClick={IconClickHandler} className="logo fixed z-50 top-3 left-3 pl-2.5 pt-1.5 w-[8vw] cursor-pointer">
+      <div onClick={IconClickHandler} className="logo fixed z-50 top-3 left-3 max-md:top-0 max-md:left-0 pl-2.5 pt-1.5 w-[8vw] max-md:w-[30vw] cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 44" className="stroke-1 stroke-zinc-300 ">
           <path
             fill={location.pathname=="/" ? "white": "black"}
@@ -46,7 +46,7 @@ const Navbar = (props) => {
        onClick={HambargarClickHandler}
         onMouseEnter={showAnimation}
         onMouseLeave={endAnimation}
-        className="button bg-black h-[3.2vw] w-[14vw] mb-2 flex items-center justify-end pr-7 cursor-pointer relative z-30"
+        className="button bg-black h-[3.2vw] max-md:h-12 w-[14vw] max-md:w-38 mb-2 flex items-center justify-end pr-7 cursor-pointer relative z-30"
       >
         <div
           ref={animationRef}

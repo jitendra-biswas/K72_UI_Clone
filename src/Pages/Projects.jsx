@@ -47,17 +47,17 @@ const Projects = (props) => {
 
   return (
     <div className="w-full bg-white font-[font2]">
-      <div className="top w-full pt-[15vw]">
+      <div className="top w-full pt-[17vw]">
         <div className="project flex items-start">
-            <h1 className=" text-[12.5vw] uppercase">Projets</h1>
-            <sup className="text-5xl mt-20">17</sup>
+            <h1 className=" text-[12.5vw] max-md:text-[15vw] uppercase">Projets</h1>
+            <sup className="text-5xl max-md:text-xl mt-20 max-md:mt-2">17</sup>
         </div>
       </div>
 
-      <div className="-mt-18 card-container">
+      <div className="-mt-18 max-md:-mt-5 card-container">
         {
             imgList.map(function(elem,idx){
-                return <div key={idx} className="card w-full px-3 flex gap-3 mb-3 sticky top-0">
+                return <div key={idx} className="card w-full px-3 flex gap-3 mb-3 sticky top-0 max-md:static max-md:flex-col">
                     <Card  img1={elem.img1} img2={elem.img2}/>
                 </div>
             })

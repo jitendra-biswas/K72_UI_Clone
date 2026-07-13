@@ -25,7 +25,7 @@ const People_row = (props) => {
         <div className="row-text w-full h-full font-[font2] p-3">
           <h3
             className={`absolute z-10 ${
-              Status ? "text-black" : "text-white"
+              Status ? "text-black" : "text-white max-md:text-[#D3FD50]"
             } text-md`}
           >
             {props.role}
