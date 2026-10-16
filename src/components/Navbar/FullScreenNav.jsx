@@ -112,7 +112,7 @@ const FullScreenNav = (props) => {
           })}
         </div>
 
-        <div className="footer h-16 flex items-center justify-between px-20 max-md:flex-col">
+        <div className="footer h-16 flex items-center justify-between px-20 max-md:flex-col max-md:-mt-24">
           <ul className="uppercase flex max-md:flex-col max-md:items-start max-md:gap-0 items-center gap-3 text-xs">
             <li className="hover:text-[#D3FD50] cursor-pointer">Politique de confidentialité</li>
             <li className="hover:text-[#D3FD50] cursor-pointer">Avis de confidentialité</li>

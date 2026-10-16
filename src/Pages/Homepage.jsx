@@ -9,7 +9,7 @@ const Homepage = () => {
          <video src="/background.mp4" autoPlay muted loop className="w-full h-full object-center object-cover"></video>
        </div>
         <div className="homepage-container w-full h-full absolute left-0 top-0 max-md:flex max-md:flex-col max-md:gap-6">
-          <div className="top flex flex-col items-center text-zinc-200 max-md:pt-[50vh]">
+          <div className="top flex flex-col items-center text-zinc-200 max-md:pt-[40vh]">
             <h1 className="font-[font1] uppercase text-[9vw] max-md:text-[12vw] leading-[9vw] max-md:leading-[12vw] mt-2">
               L'étincelle
             </h1>
